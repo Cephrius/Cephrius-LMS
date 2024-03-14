@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activation Email</title>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Email Wrapper */
+        .email-wrapper {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Email Header */
+        .email-header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .email-header h1 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        /* Email Body */
+        .email-body {
+            padding: 20px 0;
+        }
+
+        .email-body h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Email Footer */
+        .email-footer {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .email-footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="email-header">
+            <h1>Welcome To Cephrius</h1>
+        </div>
+        <div class="email-body">
+            <p>Hello <%- user.firstName %>,</p>
+            <p>Thank you for registering with Cephrius. To activate your account, please use the following activation code:</p>
+            <h2><%= activationCode %></h2>
+            <p>Please enter this code on the activation page within 5 minutes.</p>
+            <p>If you did not make this request, please ignore this email.</p>
+        </div>
+        <div class="email-footer">
+            <p>If you have any questions, you can contact us at <a href="mailto:support@cephrius.com">support@cephrius.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
