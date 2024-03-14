@@ -1,2 +1,32 @@
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Compiled files
+*.pyc
+*.class
+*.jar
+*.war
+*.ear
+
+# Dependency directories
+/node_modules/
+/vendor/
+
+# Environment files
 .env
-.envlocal
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+*.xlsx
+
+# Personal settings
+.DS_Store
+.history
+.cache
+.settings
