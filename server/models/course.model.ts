@@ -1,5 +1,5 @@
 import mongoose, { Document, Model, Schema } from "mongoose";
-import { Extension } from "typescript";
+
 
 interface IComment extends Document {
   user: string;
@@ -73,8 +73,8 @@ const courseDataSchema = new Schema<ICourseData>({
     videoUrl: String,
     videoThumbnail: Object,
     title: String,
-    description: String,
     videoSection: String,
+    description: String,
     videoDuration: Number,
     videoPlayer: String,
     links: [linkSchema],
